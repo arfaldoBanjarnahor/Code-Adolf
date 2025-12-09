@@ -17,12 +17,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         fetch(scriptURL, { 
             method: 'POST', 
-            mode: 'no-cors', // <--- INI KUNCINYA. Kita memaksa kirim tanpa minta balasan.
+            mode: 'no-cors',
             body: new FormData(form)
         })
         .then(() => {
-            // Karena mode 'no-cors', kita tidak bisa baca respon JSON.
-            // Tapi jika sampai di sini, artinya request berhasil dikirim ke server.
             console.log('Terkirim (No-CORS mode)');
             setLoading(false);
             form.reset();
