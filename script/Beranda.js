@@ -1,9 +1,13 @@
-console.log("Website UKM Robotika Siap!");
+document.addEventListener("DOMContentLoaded", function() {
+    // 1. Cari tombol dengan class 'tombol-merah'
+    const tombolGabung = document.querySelector('.tombol-merah');
 
-const tombolGabung = document.querySelector('.tombol-merah');
-
-if (tombolGabung) {
-    tombolGabung.addEventListener('click', function() {
-        alert("Terima kasih atas minat Anda! Silahkan hubungi kontak di bawah.");
-    });
-}
+    // 2. Cek apakah tombolnya ada (untuk mencegah error)
+    if (tombolGabung) {
+        // 3. Tambahkan fungsi saat tombol diklik
+        tombolGabung.addEventListener('click', function() {
+            // Arahkan ke Berita.html dan cari id="gabung"
+            window.location.href = 'Berita.html#gabung';
+        });
+    }
+});
