@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // false = Pendaftaran TUTUP (Tampilan Coming Soon)
     // true  = Pendaftaran BUKA (Tampilan Form)
     
-    const STATUS_PENDAFTARAN = false; // <--- UBAH DISINI 
+    const STATUS_PENDAFTARAN = true; // <--- UBAH DISINI 
 
     // Logika Pengaturan Tampilan
     const viewBuka = document.getElementById('pendaftaran-buka');
